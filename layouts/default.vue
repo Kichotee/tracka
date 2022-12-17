@@ -1,36 +1,34 @@
 <template>
-    <div>
-          <header>
-            <nav>
-                <ul>
-                    <li>
-                        <NuxtLink to='/'> home</NuxtLink>
-                        <NuxtLink to='/about'> about</NuxtLink>
-                        <NuxtLink to='/products'> products</NuxtLink>
-                        
+    <v-app>
+        
+        <div>
+              <header>
+               
+                    <v-toolbar :elevation="25" class="" dense  dark color="#0bcb59">
+                        <v-app-bar-nav-icon></v-app-bar-nav-icon>
+  
+                        <v-toolbar-title class="font-italic text-h4 font-weight-bold text-white pointer">Tracka</v-toolbar-title>
 
-                    </li>
-                </ul>
-            </nav>
-        </header>
-    </div>
-    <div class="">
-        <slot></slot>
-    </div>
+ 
+
+                       
+                    </v-toolbar>
+                    
+             
+    
+                
+            </header>
+        </div>
+        <div class="h-100">
+            <slot></slot>
+        </div>
+        
+    </v-app>
 </template>
 
 <script setup>
-
+    
 </script>
 
 <style lang="scss" scoped>
-li{
-    list-style-type: none;
-}
-a{
-    text-decoration: none;
-}
-    .router-link-active{
-        color: aqua;
-    }
 </style>
