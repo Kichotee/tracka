@@ -3,6 +3,8 @@
   </template>
 
 <script setup>
+import { useAuthStore } from "@/stores/sampleAuthStore";
+const authStore = useAuthStore();
 
 </script>
 
